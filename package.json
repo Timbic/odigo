@@ -1,0 +1,47 @@
+{
+	"name": "odigo",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt dev --prod",
+		"build": "nuxt build --prod",
+		"build:dev": "nuxt build",
+		"preview": "pn build && serve dist",
+		"postinstall": "nuxt prepare",
+		"fmt": "prettier --cache --write .",
+		"fmt:chk": "prettier --check .",
+		"lint": "eslint --cache",
+		"lint:fix": "eslint --cache --fix",
+		"typecheck": "nuxt typecheck",
+		"prepare": "husky"
+	},
+	"dependencies": {
+		"@nuxt/fonts": "^0.14.0",
+		"@nuxt/icon": "^2.5.1",
+		"@nuxt/image": "^2.1.0",
+		"@nuxtjs/seo": "^5.3.16",
+		"nuxt": "^4.5.2",
+		"reka-ui": "^2.10.5",
+		"vue": "^3.5.43",
+		"vue-router": "^5.3.1",
+		"vue-tsc": "^3.3.11"
+	},
+	"devDependencies": {
+		"@nuxt/eslint": "1.17.0",
+		"@timbic/prettier-config": "1.2.3",
+		"cac": "6.7.14",
+		"eslint": "10.11.0",
+		"husky": "9.1.7",
+		"lint-staged": "17.6.0",
+		"prettier": "3.9.9",
+		"serve": "14.2.6",
+		"typescript": "6.0.3"
+	},
+	"lint-staged": {
+		"*/**/*.{js,ts,vue,css,md,json}": [
+			"pnpm fmt",
+			"pnpm lint:fix"
+		]
+	},
+	"packageManager": "pnpm@12.6.0"
+}
