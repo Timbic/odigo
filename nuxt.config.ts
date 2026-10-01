@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 
 	app: { rootAttrs: { class: "isolate" }, head: { htmlAttrs: { class: "light" } } },
 	css: ["~/assets/css/main.css"],
+	postcss: { plugins: { "@csstools/postcss-global-data": { files: ["./app/assets/css/breakpoints.css"] }, "postcss-custom-media": {} } },
 	components: [{ path: "~/components", pathPrefix: false }],
 	fonts: { defaults: { weights: ["400 700"], styles: ["normal"], subsets: ["latin-ext", "latin"] } },
 

@@ -1,0 +1,28 @@
+@layer theme {
+	:root,
+	:host {
+		--ui-primary-100: #1b7dff;
+		--ui-primary-200: #006dfe;
+		--ui-primary-300: #102746;
+		--ui-primary-400: #0e1d28;
+		--ui-color-neutral-100: #ffffff;
+		--ui-color-neutral-200: #d8d8d8;
+		--ui-color-neutral-300: #bfc0c5;
+
+		--ui-text-highlighted: white;
+		--ui-text-toned: var(--ui-primary-100);
+		--ui-text-muted: var(--ui-primary-200);
+		--ui-text-dimmed: var(--ui-primary-300);
+		--ui-text-obscure: var(--ui-primary-400);
+		--ui-text: black;
+
+		--ui-bg: var(--ui-color-neutral-100);
+		--ui-bg-toned: var(--ui-color-neutral-200);
+		--ui-bg-muted: var(--ui-color-neutral-300);
+		--ui-bg-obscure: black;
+
+		--ui-radius: 0.5rem;
+		--ui-header-height: --spacing(16);
+		--ui-container: 90rem;
+	}
+}

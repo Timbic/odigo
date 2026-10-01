@@ -1,0 +1,24 @@
+@layer base {
+	:root {
+		font-size: 16px;
+		scroll-behavior: smooth;
+		scrollbar-gutter: stable;
+		color-scheme: light;
+	}
+
+	body {
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		color-scheme: light;
+	}
+
+	/* :focus-visible {
+	outline-style: none;
+} */
+
+	@media (prefers-reduced-motion) {
+		:root {
+			scroll-behavior: auto;
+		}
+	}
+}

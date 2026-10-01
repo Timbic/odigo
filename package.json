@@ -27,12 +27,14 @@
 		"vue-tsc": "^3.3.11"
 	},
 	"devDependencies": {
+		"@csstools/postcss-global-data": "4.0.0",
 		"@nuxt/eslint": "1.17.0",
 		"@timbic/prettier-config": "1.2.3",
 		"cac": "6.7.14",
 		"eslint": "10.11.0",
 		"husky": "9.1.7",
 		"lint-staged": "17.6.0",
+		"postcss-custom-media": "12.0.2",
 		"prettier": "3.9.9",
 		"serve": "14.2.6",
 		"typescript": "6.0.3"

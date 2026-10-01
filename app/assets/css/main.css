@@ -1,3 +1,40 @@
-.container {
-	font-size: 16px;
+@import "./preflight.css";
+@import "./base.css";
+@import "./theme.css";
+@import "./breakpoints.css";
+
+@layer {
+	:root,
+	:host {
+		--color-neutral-100: var(--ui-color-neutral-100);
+		--color-neutral-200: var(--ui-color-neutral-200);
+		--color-neutral-300: var(--ui-color-neutral-300);
+		--color-primary-100: var(--ui-primary-100);
+		--color-primary-200: var(--ui-primary-200);
+		--color-primary-300: var(--ui-primary-300);
+		--color-primary-400: var(--ui-primary-400);
+		--color-primary: var(--ui-primary-100);
+
+		--radius-xs: calc(var(--ui-radius) * 0.5);
+		--radius-sm: calc(var(--ui-radius) * 0.75);
+		--radius-md: var(--ui-radius);
+		--radius-lg: calc(var(--ui-radius) * 1.25);
+		--radius-xl: calc(var(--ui-radius) * 1.5);
+		--radius-2xl: calc(var(--ui-radius) * 1.75);
+		--radius-3xl: calc(var(--ui-radius) * 2);
+
+		--text-color-obscure: var(--ui-text-obscure);
+		--text-color-dimmed: var(--ui-text-dimmed);
+		--text-color-muted: var(--ui-text-muted);
+		--text-color-toned: var(--ui-text-toned);
+		--text-color-default: var(--ui-text);
+		--text-color-highlighted: var(--ui-text-highlighted);
+
+		--background-color-default: var(--ui-bg);
+		--background-color-obscure: var(--ui-bg-obscure);
+		--background-color-muted: var(--ui-bg-muted);
+		--background-color-toned: var(--ui-bg-toned);
+
+		--font-main: "Inter", "sans-serif";
+	}
 }
