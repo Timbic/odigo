@@ -1,4 +1,6 @@
-import simplifyConfig from "./simplify.ts";
+import { nitroStatic, nuxtHooks, vueChunk } from "./configs/nuxt";
+
+const isProd = process.argv.includes("--prod");
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -6,7 +8,7 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	modules: ["@nuxt/eslint", "@nuxt/fonts", "reka-ui/nuxt", "@nuxt/image", "@nuxtjs/seo"],
 
-	app: { rootAttrs: { class: "isolate" }, head: { htmlAttrs: { class: "light" } } },
+	app: { rootAttrs: { class: "isolate" }, head: { htmlAttrs: { class: "dark" } } },
 	css: ["~/assets/css/main.css"],
 	postcss: { plugins: { "@csstools/postcss-global-data": { files: ["./app/assets/css/breakpoints.css"] }, "postcss-custom-media": {} } },
 	components: [{ path: "~/components", pathPrefix: false }],
@@ -16,6 +18,13 @@ export default defineNuxtConfig({
 	ogImage: false,
 	sitemap: { zeroRuntime: true, credits: false },
 
+	typescript: { typeCheck: true, nodeTsConfig: { include: ["../configs/nuxt/**/*.ts"] } },
+
+	vite: isProd ? vueChunk() : {},
+
+	hooks: isProd ? nuxtHooks({ noError: true, noBuildArtifacts: true, noErrorPagesArtifacts: true }) : {},
+
+	nitro: isProd ? nitroStatic({ noError: true, noErrorPages: true }) : nitroStatic(),
 	// icon: {
 	// 	provider: "none",
 	// 	serverBundle: false,
@@ -40,6 +49,4 @@ export default defineNuxtConfig({
 	experimental: {
 		appManifest: false,
 	},
-
-	...simplifyConfig({}),
 });
