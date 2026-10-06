@@ -1,6 +1,7 @@
 import { nitroStatic, nuxtHooks, vueChunk } from "./configs/nuxt";
 
 const isProd = process.argv.includes("--prod");
+const isDev = process.argv.includes("dev");
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -18,7 +19,7 @@ export default defineNuxtConfig({
 	ogImage: false,
 	sitemap: { zeroRuntime: true, credits: false },
 
-	typescript: { typeCheck: true, nodeTsConfig: { include: ["../configs/nuxt/**/*.ts"] } },
+	typescript: { typeCheck: isDev, nodeTsConfig: { include: ["../configs/nuxt/**/*.ts"] } },
 
 	vite: isProd ? vueChunk() : {},
 
