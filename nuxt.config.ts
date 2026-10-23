@@ -46,8 +46,4 @@ export default defineNuxtConfig({
 		title: "<title>",
 		description: "<description>",
 	},
-
-	experimental: {
-		appManifest: false,
-	},
 });
