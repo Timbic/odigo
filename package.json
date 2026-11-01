@@ -40,9 +40,9 @@
 		"typescript": "6.0.3"
 	},
 	"lint-staged": {
-		"*/**/*.{js,ts,vue,css,md,json}": [
-			"pnpm fmt",
-			"pnpm lint:fix"
+		"*.{js,ts,md,json}": [
+			"prettier --write",
+			"eslint --fix"
 		]
 	},
 	"packageManager": "pnpm@12.6.0"
