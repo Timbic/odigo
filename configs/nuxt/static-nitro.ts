@@ -10,6 +10,10 @@ export type NitroStaticOptions = {
 export function nitroStatic(options?: NitroStaticOptions) {
 	const defaultOptions: NuxtConfig["nitro"] = {
 		preset: "static",
+		devStorage: {
+			data: { driver: "memory" },
+			src: { driver: "memory" },
+		},
 	};
 
 	if (options?.noError) {
