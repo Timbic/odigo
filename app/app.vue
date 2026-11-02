@@ -1,3 +1,5 @@
 <template>
-	<div>Hola</div>
+	<AppHeader />
+	<AppMain />
+	<AppFooter />
 </template>
