@@ -7,10 +7,10 @@ const isDev = process.argv.includes("dev");
 export default defineNuxtConfig({
 	compatibilityDate: "2025-07-15",
 	devtools: { enabled: true },
-	modules: ["@nuxt/eslint", "@nuxt/fonts", "reka-ui/nuxt", "@nuxt/image", "@nuxtjs/seo"],
+	modules: ["@nuxt/eslint", "@nuxt/fonts", "reka-ui/nuxt", "@nuxt/image", "@nuxtjs/seo", "@nuxt/icon"],
 
 	app: { rootAttrs: { class: "isolate" }, head: { htmlAttrs: { class: "dark" } } },
-	css: ["~/assets/css/main.css"],
+	css: ["~/assets/css/colors.css", "~/assets/css/main.css"],
 	postcss: { plugins: { "@csstools/postcss-global-data": { files: ["./app/assets/css/breakpoints.css"] }, "postcss-custom-media": {} } },
 	components: [{ path: "~/components", pathPrefix: false }],
 	fonts: { defaults: { weights: ["400 700"], styles: ["normal"], subsets: ["latin-ext", "latin"] } },
@@ -19,19 +19,20 @@ export default defineNuxtConfig({
 	ogImage: false,
 	sitemap: { zeroRuntime: true, credits: false },
 
-	typescript: { typeCheck: isDev, nodeTsConfig: { include: ["../configs/nuxt/**/*.ts"] } },
+	typescript: { typeCheck: isDev, nodeTsConfig: { include: ["../configs/nuxt/**/*.ts", "../test/**/*.ts", "../*.ts"] } },
 
 	vite: isProd ? vueChunk() : {},
 
 	hooks: isProd ? nuxtHooks({ noError: true, noBuildArtifacts: true, noErrorPagesArtifacts: true }) : {},
 
 	nitro: isProd ? nitroStatic({ noError: true, noErrorPages: true }) : nitroStatic(),
-	// icon: {
-	// 	provider: "none",
-	// 	serverBundle: false,
-	// 	clientBundle: { scan: true, includeCustomCollections: true, sizeLimitKb: 4096 },
-	// 	customCollections: [{ prefix: "<name>", dir: "./app/assets/icons" }],
-	// },
+	icon: {
+		provider: "none",
+		mode: "css",
+		serverBundle: false,
+		clientBundle: { scan: true, includeCustomCollections: true, sizeLimitKb: 4096 },
+		customCollections: [{ prefix: "odigo", dir: "./app/assets/icons", normalizeIconName: false }],
+	},
 
 	robots: {
 		blockAiBots: true,
