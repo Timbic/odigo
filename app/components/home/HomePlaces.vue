@@ -1,84 +1,84 @@
 <template>
-	<section class="places wrapper-2">
-		<div class="places__header">
-			<div class="places__title title">
-				<h2 class="places__title-style title-style">Get inspired for your next trip</h2>
+	<section class="places wrapper">
+		<div class="header">
+			<div class="heading">
+				<h2 class="title">Get inspired for your next trip</h2>
 				<Icon
 					name="odigo:title-line"
-					class="places__line title-line"
+					class="line"
 					aria-hidden="true"
 				/>
 			</div>
-			<div class="places__link link">
+			<div>
 				<a
 					href="#"
-					class="places__view link-text"
+					class="link-text"
 					>view all</a
 				>
 				<Icon
 					name="odigo:benefitsArrow-icon"
-					class="places__arrow link-arrow"
+					class="link-arrow"
 					aria-hidden="true"
 				/>
 			</div>
 		</div>
-		<div class="places__body">
-			<div class="places__images">
-				<figure class="places__image places-image_size_lg">
+		<div>
+			<div class="images">
+				<figure class="image size-lg">
 					<img
 						src="~/assets/img/places-image1.jpg"
 						alt="Mount Fuji"
-						class="places__image-pic-lg"
+						class="pic-lg"
 					/>
-					<figcaption class="places__image-title">Mount Fuji</figcaption>
+					<figcaption class="image-title">Mount Fuji</figcaption>
 					<a
 						href="#"
-						class="places__image-link"
+						class="image-link"
 					></a>
 				</figure>
-				<figure class="places__image places-image_size_lg">
+				<figure class="image size-lg">
 					<img
 						src="~/assets/img/places-image2.jpg"
 						alt="Kyoto"
-						class="places__image-pic-lg"
+						class="pic-lg"
 					/>
-					<figcaption class="places__image-title">Kyoto</figcaption>
+					<figcaption class="image-title">Kyoto</figcaption>
 					<a
 						href="#"
-						class="places__image-link"
+						class="image-link"
 					></a>
 				</figure>
-				<figure class="places__image places-image_size_sml">
+				<figure class="image size-sm">
 					<img
 						src="~/assets/img/places-image3.jpg"
 						alt="Tokyo"
-						class="places__image-pic-sml"
+						class="pic-sm"
 					/>
 					<a
 						href="#"
-						class="places__image-link"
+						class="image-link"
 					></a>
 				</figure>
-				<figure class="places__image places-image_size_sml">
+				<figure class="image size-sm">
 					<img
 						src="~/assets/img/places-image4.jpg"
 						alt="Niigata"
-						class="places__image-pic-sml"
+						class="pic-sm"
 					/>
 					<a
 						href="#"
-						class="places__image-link"
+						class="image-link"
 					></a>
 				</figure>
-				<figure class="places__image places-image_size_sml">
+				<figure class="image size-sm">
 					<img
 						src="~/assets/img/places-image5.jpg"
 						alt="Sapporo"
-						class="places__image-pic-sml"
+						class="pic-sm"
 					/>
 					<a
 						href="#"
-						class="places__image-link"
+						class="image-link"
 					></a>
 				</figure>
 			</div>
@@ -87,7 +87,7 @@
 </template>
 
 <style scoped>
-.wrapper-2 {
+.wrapper {
 	max-width: 78.875rem;
 	margin: 0 auto;
 	padding: 0 0.9375rem;
@@ -122,7 +122,7 @@
 
 /*Title styles start */
 
-.title-style {
+.title {
 	font-size: 2.1875rem;
 	line-height: 2.625rem;
 	text-align: left;
@@ -138,18 +138,18 @@
 	margin-bottom: 8.1875rem;
 }
 
-.places__header {
+.header {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 2.25rem;
 }
-.places__title {
+.heading {
 	margin-right: 1.25rem;
 }
 
-.places__line {
+.line {
 	display: inline-block;
 	width: 15.9375rem;
 	height: 0.1875rem;
@@ -157,18 +157,18 @@
 	vertical-align: baseline;
 }
 
-.places__images {
+.images {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 0.625rem;
 }
 
-.places__image {
+.image {
 	position: relative;
 	overflow: hidden;
 }
 
-.places__image::after {
+.image::after {
 	display: block;
 	content: "";
 	width: 100%;
@@ -180,13 +180,13 @@
 	z-index: 2;
 }
 
-.places__image:hover .places__image-pic-lg,
-.places__image:hover .places__image-title,
-.places__image:hover .places__image-pic-sml {
+.image:hover .pic-lg,
+.image:hover .image-title,
+.image:hover .pic-sm {
 	transform: scale(1.05);
 }
 
-.places__image-title {
+.image-title {
 	position: absolute;
 	color: var(--color-white);
 	font-size: 3.125rem;
@@ -198,29 +198,29 @@
 	transition: 0.15s all;
 }
 
-.places-image_size_lg {
+.size-lg {
 	grid-column: span 3;
 }
 
-.places-image_size_sml {
+.size-sm {
 	grid-column: span 2;
 }
 
-.places__image-pic-lg {
+.pic-lg {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 	transition: 0.15s all;
 }
 
-.places__image-pic-sml {
+.pic-sm {
 	max-width: 25.9375rem;
 	max-height: 17.6875rem;
 	object-fit: cover;
 	transition: 0.15s all;
 }
 
-.places__image-link {
+.image-link {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -236,23 +236,23 @@
 		margin-bottom: 2.5rem;
 	}
 
-	.places__image {
+	.image {
 		object-fit: initial;
 		height: 21.875rem;
 	}
-	.places__image-pic-sml {
+	.pic-sm {
 		transform: translateY(-25%);
 	}
 
-	.places-image_size_lg {
+	.size-lg {
 		grid-column: span 6;
 	}
 
-	.places-image_size_sml {
+	.size-sm {
 		grid-column: span 6;
 	}
 
-	.places__image-pic-sml {
+	.pic-sm {
 		grid-column: span 6;
 		width: 100%;
 		max-width: none;

@@ -1,276 +1,276 @@
 <template>
 	<!-- TOP SECTION  -->
 
-	<section class="top wrapper-2">
-		<div class="top__title title">
-			<h2 class="top__title-style title-style">Today top places to visit</h2>
+	<section class="top wrapper">
+		<div class="heading">
+			<h2 class="title">Today top places to visit</h2>
 			<Icon
 				name="odigo:title-line"
-				class="top__line title-line"
+				class="line"
 				aria-hidden="true"
 			/>
 		</div>
-		<div class="top__cards">
+		<div class="cards">
 			<!-- CARD #1 -->
 
-			<div class="card top__card">
-				<div class="card__img top__card-img">
+			<div class="card">
+				<div class="image">
 					<img
 						src="~/assets/img/top-image1.jpg"
 						alt="Nagoya"
-						class="card__thumb top__card-thumb"
+						class="thumb"
 					/>
-					<div class="card__stats top__card-stats">
-						<h3 class="card__title top__card-title">Nagoya</h3>
-						<div class="card__likes top__card-likes">
-							<span class="card__likes-value top__card-likes-value">221</span>
+					<div class="stats">
+						<h3 class="card-title">Nagoya</h3>
+						<div class="likes">
+							<span>221</span>
 							<Icon
 								name="odigo:like-icon"
-								class="card__likes-icon"
+								class="likes-icon"
 								aria-hidden="true"
 							/>
 						</div>
-						<div class="card__comments top__card-comments">
-							<span class="card__likes-value top__card-likes-value">50</span>
+						<div class="comments">
+							<span>50</span>
 							<Icon
 								name="odigo:comment-icon"
-								class="card__comments-icon"
+								class="comments-icon"
 								aria-hidden="true"
 							/>
 						</div>
 					</div>
 					<a
 						href="#"
-						class="card__link top__card-link"
+						class="link"
 					></a>
 				</div>
-				<p class="card__desk top__card-desk">
+				<p class="desc">
 					Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side
 					up i could pee on this.
 				</p>
 				<a
 					href="#"
-					class="card__btn top__card-btn"
+					class="btn"
 					>see more</a
 				>
 			</div>
 
 			<!-- CARD #2 -->
 
-			<div class="card top__card">
-				<div class="card__img top__card-img">
+			<div class="card">
+				<div class="image">
 					<img
 						src="~/assets/img/top-image2.jpg"
 						alt="Nigata"
-						class="card__thumb top__card-thumb"
+						class="thumb"
 					/>
-					<div class="card__stats top__card-stats">
-						<h3 class="card__title top__card-title">Niigata</h3>
-						<div class="card__likes top__card-likes">
-							<span class="card__likes-value top__card-likes-value">221</span>
+					<div class="stats">
+						<h3 class="card-title">Niigata</h3>
+						<div class="likes">
+							<span>221</span>
 							<Icon
 								name="odigo:like-icon"
-								class="card__likes-icon"
+								class="likes-icon"
 								aria-hidden="true"
 							/>
 						</div>
-						<div class="card__comments top__card-comments">
-							<span class="card__likes-value top__card-likes-value">50</span>
+						<div class="comments">
+							<span>50</span>
 							<Icon
 								name="odigo:comment-icon"
-								class="card__comments-icon"
+								class="comments-icon"
 								aria-hidden="true"
 							/>
 						</div>
 					</div>
 					<a
 						href="#"
-						class="card__link top__card-link"
+						class="link"
 					></a>
 				</div>
-				<p class="card__desk top__card-desk">
+				<p class="desc">
 					Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side
 					up i could pee on this.
 				</p>
 				<a
 					href="#"
-					class="card__btn top__card-btn"
+					class="btn"
 					>see more</a
 				>
 			</div>
 
 			<!-- CARD #3 -->
 
-			<div class="card top__card">
-				<div class="card__img top__card-img">
+			<div class="card">
+				<div class="image">
 					<img
 						src="~/assets/img/top-image3.jpg"
 						alt="Osaka"
-						class="card__thumb top__card-thumb"
+						class="thumb"
 					/>
-					<div class="card__stats top__card-stats">
-						<h3 class="card__title top__card-title">Osaka</h3>
-						<div class="card__likes top__card-likes">
-							<span class="card__likes-value top__card-likes-value">221</span>
+					<div class="stats">
+						<h3 class="card-title">Osaka</h3>
+						<div class="likes">
+							<span>221</span>
 							<Icon
 								name="odigo:like-icon"
-								class="card__likes-icon"
+								class="likes-icon"
 								aria-hidden="true"
 							/>
 						</div>
-						<div class="card__comments top__card-comments">
-							<span class="card__likes-value top__card-likes-value">50</span>
+						<div class="comments">
+							<span>50</span>
 							<Icon
 								name="odigo:comment-icon"
-								class="card__comments-icon"
+								class="comments-icon"
 								aria-hidden="true"
 							/>
 						</div>
 					</div>
 					<a
 						href="#"
-						class="card__link top__card-link"
+						class="link"
 					></a>
 				</div>
-				<p class="card__desk top__card-desk">
+				<p class="desc">
 					Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side
 					up i could pee on this.
 				</p>
 				<a
 					href="#"
-					class="card__btn top__card-btn"
+					class="btn"
 					>see more</a
 				>
 			</div>
 
 			<!-- CARD #4 -->
 
-			<div class="card top__card">
-				<div class="card__img top__card-img">
+			<div class="card">
+				<div class="image">
 					<img
 						src="~/assets/img/top-image4.jpg"
 						alt="Saitama"
-						class="card__thumb top__card-thumb"
+						class="thumb"
 					/>
-					<div class="card__stats top__card-stats">
-						<h3 class="card__title top__card-title">Saitama</h3>
-						<div class="card__likes top__card-likes">
-							<span class="card__likes-value top__card-likes-value">221</span>
+					<div class="stats">
+						<h3 class="card-title">Saitama</h3>
+						<div class="likes">
+							<span>221</span>
 							<Icon
 								name="odigo:like-icon"
-								class="card__likes-icon"
+								class="likes-icon"
 								aria-hidden="true"
 							/>
 						</div>
-						<div class="card__comments top__card-comments">
-							<span class="card__likes-value top__card-likes-value">50</span>
+						<div class="comments">
+							<span>50</span>
 							<Icon
 								name="odigo:comment-icon"
-								class="card__comments-icon"
+								class="comments-icon"
 								aria-hidden="true"
 							/>
 						</div>
 					</div>
 					<a
 						href="#"
-						class="card__link top__card-link"
+						class="link"
 					></a>
 				</div>
-				<p class="card__desk top__card-desk">
+				<p class="desc">
 					Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side
 					up i could pee on this.
 				</p>
 				<a
 					href="#"
-					class="card__btn top__card-btn"
+					class="btn"
 					>see more</a
 				>
 			</div>
 
 			<!-- CARD #5 -->
 
-			<div class="card top__card">
-				<div class="card__img top__card-img">
+			<div class="card">
+				<div class="image">
 					<img
 						src="~/assets/img/top-image5.jpg"
 						alt="Ueno"
-						class="card__thumb top__card-thumb"
+						class="thumb"
 					/>
-					<div class="card__stats top__card-stats">
-						<h3 class="card__title top__card-title">Ueno</h3>
-						<div class="card__likes top__card-likes">
-							<span class="card__likes-value top__card-likes-value">221</span>
+					<div class="stats">
+						<h3 class="card-title">Ueno</h3>
+						<div class="likes">
+							<span>221</span>
 							<Icon
 								name="odigo:like-icon"
-								class="card__likes-icon"
+								class="likes-icon"
 								aria-hidden="true"
 							/>
 						</div>
-						<div class="card__comments top__card-comments">
-							<span class="card__likes-value top__card-likes-value">50</span>
+						<div class="comments">
+							<span>50</span>
 							<Icon
 								name="odigo:comment-icon"
-								class="card__comments-icon"
+								class="comments-icon"
 								aria-hidden="true"
 							/>
 						</div>
 					</div>
 					<a
 						href="#"
-						class="card__link top__card-link"
+						class="link"
 					></a>
 				</div>
-				<p class="card__desk top__card-desk">
+				<p class="desc">
 					Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side
 					up i could pee on this.
 				</p>
 				<a
 					href="#"
-					class="card__btn top__card-btn"
+					class="btn"
 					>see more</a
 				>
 			</div>
 
 			<!-- CARD #6 -->
 
-			<div class="card top__card">
-				<div class="card__img top__card-img">
+			<div class="card">
+				<div class="image">
 					<img
 						src="~/assets/img/top-image6.jpg"
 						alt="Shibuya"
-						class="card__thumb top__card-thumb"
+						class="thumb"
 					/>
-					<div class="card__stats top__card-stats">
-						<h3 class="card__title top__card-title">Shibuya</h3>
-						<div class="card__likes top__card-likes">
-							<span class="card__likes-value top__card-likes-value">221</span>
+					<div class="stats">
+						<h3 class="card-title">Shibuya</h3>
+						<div class="likes">
+							<span>221</span>
 							<Icon
 								name="odigo:like-icon"
-								class="card__likes-icon"
+								class="likes-icon"
 								aria-hidden="true"
 							/>
 						</div>
-						<div class="card__comments top__card-comments">
-							<span class="card__likes-value top__card-likes-value">50</span>
+						<div class="comments">
+							<span>50</span>
 							<Icon
 								name="odigo:comment-icon"
-								class="card__comments-icon"
+								class="comments-icon"
 								aria-hidden="true"
 							/>
 						</div>
 					</div>
 					<a
 						href="#"
-						class="card__link top__card-link"
+						class="link"
 					></a>
 				</div>
-				<p class="card__desk top__card-desk">
+				<p class="desc">
 					Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side
 					up i could pee on this.
 				</p>
 				<a
 					href="#"
-					class="card__btn top__card-btn"
+					class="btn"
 					>see more</a
 				>
 			</div>
@@ -279,13 +279,14 @@
 </template>
 
 <style scoped>
-.wrapper-2 {
+.wrapper {
 	max-width: 78.875rem;
 	margin: 0 auto;
 	padding: 0 0.9375rem;
 }
 
-.title-style {
+.title {
+	margin-bottom: 0.4375rem;
 	font-size: 2.1875rem;
 	line-height: 2.625rem;
 	text-align: left;
@@ -299,7 +300,7 @@
 	grid-column: span 2;
 }
 
-.card__img {
+.image {
 	position: relative;
 	max-width: 24.125rem;
 	max-height: 23.5625rem;
@@ -307,12 +308,12 @@
 	overflow: hidden;
 }
 
-.card__thumb {
+.thumb {
 	background-size: cover;
 	transition: 0.15s all;
 }
 
-.card__stats {
+.stats {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -325,7 +326,7 @@
 	justify-content: flex-end;
 }
 
-.card__title {
+.card-title {
 	font-size: 1.125rem;
 	line-height: 1.5rem;
 	font-weight: 400;
@@ -333,7 +334,7 @@
 	margin: 0 auto 0 0;
 }
 
-.card__likes {
+.likes {
 	display: flex;
 	align-items: center;
 	gap: 0.25rem;
@@ -343,13 +344,13 @@
 	margin-right: 0.875rem;
 }
 
-.card__likes-icon {
+.likes-icon {
 	width: 1rem;
 	height: 0.9375rem;
 	flex-shrink: 0;
 }
 
-.card__comments {
+.comments {
 	display: flex;
 	align-items: center;
 	gap: 0.5625rem;
@@ -358,13 +359,13 @@
 	font-weight: 400;
 }
 
-.card__comments-icon {
+.comments-icon {
 	width: 0.875rem;
 	height: 0.875rem;
 	flex-shrink: 0;
 }
 
-.card__link {
+.link {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -373,11 +374,11 @@
 	height: 100%;
 }
 
-.card__img:hover .card__thumb {
+.image:hover .thumb {
 	transform: scale(1.05);
 }
 
-.card__desk {
+.desc {
 	color: var(--color-navy);
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -385,7 +386,7 @@
 	float: right;
 }
 
-.card__btn {
+.btn {
 	width: 7.375rem;
 	color: var(--color-white);
 	font-size: 1rem;
@@ -397,9 +398,9 @@
 	margin: auto 0 0 0;
 }
 
-.card__btn:hover,
-.card__btn:active,
-.card__btn:focus {
+.btn:hover,
+.btn:active,
+.btn:focus {
 	background-color: var(--color-blue-darker);
 }
 
@@ -407,14 +408,7 @@
 	margin-bottom: 9rem;
 }
 
-.top__title-style {
-	margin-bottom: 0.4375rem;
-	font-size: 2.1875rem;
-	line-height: 2.625rem;
-	font-weight: 500;
-}
-
-.top__line {
+.line {
 	display: inline-block;
 	width: 15.9375rem;
 	height: 0.1875rem;
@@ -423,7 +417,7 @@
 	vertical-align: baseline;
 }
 
-.top__cards {
+.cards {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	column-gap: 2.5rem;

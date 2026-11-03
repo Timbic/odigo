@@ -1,36 +1,36 @@
 <template>
 	<!-- TOURS SECTION -->
 
-	<section class="tours wrapper-2">
+	<section class="tours wrapper">
 		<!-- PREFECTURE PART -->
 
-		<div class="tours__prefecture">
-			<div class="prefecture__image">
+		<div class="prefecture">
+			<div class="prefecture-image">
 				<img
 					src="~/assets/img/tours-image1.jpg"
 					alt="Prefecture in Focus: Tottori"
-					class="prefecture__pic"
+					class="prefecture-pic"
 				/>
 				<a
 					href="#"
-					class="prefecture__image-link"
+					class="image-link"
 				></a>
 			</div>
-			<div class="prefecture__body">
-				<h2 class="prefecture__title">Prefecture in Focus: Tottori</h2>
-				<p class="prefecture__desk">
+			<div class="prefecture-body">
+				<h2 class="prefecture-title">Prefecture in Focus: Tottori</h2>
+				<p class="prefecture-desc">
 					Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side
 					up i could pee on this if i had the energy but under the bed, for attack the child, open the door,
 				</p>
-				<div class="tours__link link">
+				<div>
 					<a
 						href="#"
-						class="tours__view link-text"
+						class="link-text"
 						>view prefecture</a
 					>
 					<Icon
 						name="odigo:benefitsArrow-icon"
-						class="tours__arrow link-arrow"
+						class="link-arrow"
 						aria-hidden="true"
 					/>
 				</div>
@@ -39,35 +39,35 @@
 
 		<!-- NEIGHBORHOOD PART -->
 
-		<div class="tours__neighborhood">
-			<div class="neighborhood__body">
-				<h2 class="neighborhood__title">Featured Neighborhood: Kyoto’s Arashiyama</h2>
-				<p class="neighborhood__desk">
+		<div class="neighborhood">
+			<div class="neighborhood-body">
+				<h2 class="neighborhood-title">Featured Neighborhood: Kyoto’s Arashiyama</h2>
+				<p class="neighborhood-desc">
 					Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side
 					up i could pee on this if i had the energy but under the bed, for attack the child, open the door,
 				</p>
-				<div class="tours__link link">
+				<div>
 					<a
 						href="#"
-						class="tours__view link-text"
+						class="link-text"
 						>view neighborhood</a
 					>
 					<Icon
 						name="odigo:benefitsArrow-icon"
-						class="tours__arrow link-arrow"
+						class="link-arrow"
 						aria-hidden="true"
 					/>
 				</div>
 			</div>
-			<div class="neighborhood__image">
+			<div class="neighborhood-image">
 				<img
 					src="~/assets/img/tours-image2.jpg"
 					alt="Featured Neighborhood: Kyoto’s Arashiyama"
-					class="neighborhood__pic"
+					class="neighborhood-pic"
 				/>
 				<a
 					href="#"
-					class="neighborhood__image-link"
+					class="image-link"
 				></a>
 			</div>
 		</div>
@@ -75,7 +75,7 @@
 </template>
 
 <style scoped>
-.wrapper-2 {
+.wrapper {
 	max-width: 78.875rem;
 	margin: 0 auto;
 	padding: 0 0.9375rem;
@@ -116,21 +116,20 @@
 	margin-bottom: 8.6875rem;
 }
 
-.prefecture__pic {
+.prefecture-pic {
 	transition: 0.15s all;
 }
 
-.neighborhood__pic {
+.neighborhood-pic {
 	transition: 0.15s all;
 }
 
-.prefecture__image:hover .prefecture__pic,
-.neighborhood__image:hover .neighborhood__pic {
+.prefecture-image:hover .prefecture-pic,
+.neighborhood-image:hover .neighborhood-pic {
 	transform: scale(1.05);
 }
 
-.prefecture__image-link,
-.neighborhood__image-link {
+.image-link {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -139,14 +138,14 @@
 	height: 100%;
 }
 
-.tours__prefecture {
+.prefecture {
 	display: flex;
 	flex-wrap: nowrap;
 	max-height: 22.125rem;
 	margin-bottom: 4.8125rem;
 }
 
-.prefecture__image {
+.prefecture-image {
 	display: block;
 	z-index: 3;
 	position: relative;
@@ -155,12 +154,12 @@
 	overflow: hidden;
 }
 
-.prefecture__body {
+.prefecture-body {
 	display: block;
 	color: var(--color-navy);
 }
 
-.prefecture__title {
+.prefecture-title {
 	margin-top: 1.625rem;
 	font-size: 1.875rem;
 	line-height: 2.5rem;
@@ -168,20 +167,20 @@
 	font-weight: 700;
 }
 
-.prefecture__desk {
+.prefecture-desc {
 	max-width: 32.5rem;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	margin-bottom: 3.625rem;
 }
 
-.tours__neighborhood {
+.neighborhood {
 	display: flex;
 	flex-wrap: nowrap;
 	max-height: 22.125rem;
 }
 
-.neighborhood__image {
+.neighborhood-image {
 	z-index: 3;
 	display: block;
 	position: relative;
@@ -189,7 +188,7 @@
 	overflow: hidden;
 }
 
-.neighborhood__body {
+.neighborhood-body {
 	display: block;
 	color: var(--color-navy);
 	margin-left: 2.9375rem;
@@ -197,7 +196,7 @@
 	max-width: 32.5rem;
 }
 
-.neighborhood__title {
+.neighborhood-title {
 	margin-top: 1.625rem;
 	font-size: 1.875rem;
 	line-height: 2.5rem;
@@ -205,7 +204,7 @@
 	font-weight: 700;
 }
 
-.neighborhood__desk {
+.neighborhood-desc {
 	max-width: 32.5rem;
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -219,40 +218,40 @@
 		margin-bottom: 2.5rem;
 	}
 
-	.tours__prefecture {
+	.prefecture {
 		margin-bottom: 1.875rem;
 	}
 
-	.prefecture__image {
+	.prefecture-image {
 		margin-right: 2.5rem;
 	}
 
-	.prefecture__pic {
+	.prefecture-pic {
 		transform: translateY(20%);
 	}
 
-	.prefecture__title {
+	.prefecture-title {
 		margin-bottom: 1.25rem;
 	}
 
-	.prefecture__desk {
+	.prefecture-desc {
 		margin-bottom: 1.25rem;
 	}
 
-	.neighborhood__body {
+	.neighborhood-body {
 		margin-left: 1.25rem;
 		margin-right: 2.5rem;
 	}
 
-	.neighborhood__title {
+	.neighborhood-title {
 		margin-bottom: 1.25rem;
 	}
 
-	.neighborhood__desk {
+	.neighborhood-desc {
 		margin-bottom: 1.25rem;
 	}
 
-	.neighborhood__pic {
+	.neighborhood-pic {
 		transform: translateY(20%);
 	}
 }

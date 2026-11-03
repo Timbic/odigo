@@ -1,118 +1,118 @@
 <template>
 	<footer class="footer">
 		<div class="wrapper">
-			<div class="footer__item">
-				<div class="footer__logo">
+			<div class="inner">
+				<div class="logo">
 					<span
-						class="footer__logo-mark"
+						class="logo-mark"
 						role="img"
 						aria-label="Discover Amazing places in Japan"
 					>
 						<Icon
 							name="odigo:odigoFooter-Logo"
-							class="footer__logo-pic"
+							class="logo-pic"
 							aria-hidden="true"
 						/>
 					</span>
 				</div>
-				<nav class="footer__nav">
-					<ul class="footer__menu">
-						<li class="footer__menu-item">
-							<h3 class="footer__menu-title">Company</h3>
+				<nav class="nav">
+					<ul class="menu">
+						<li class="menu-item">
+							<h3 class="menu-title">Company</h3>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>About</a
 							>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Team</a
 							>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Team</a
 							>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Privacy Policy</a
 							>
 						</li>
 					</ul>
 
-					<ul class="footer__menu">
-						<li class="footer__menu-item">
-							<h3 class="footer__menu-title">Locations</h3>
+					<ul class="menu">
+						<li class="menu-item">
+							<h3 class="menu-title">Locations</h3>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Tokyo</a
 							>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Kyoto</a
 							>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Osaka</a
 							>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Hokkaido</a
 							>
 						</li>
 					</ul>
 
-					<ul class="footer__menu">
-						<li class="footer__menu-item">
-							<h3 class="footer__menu-title">Social Media</h3>
+					<ul class="menu">
+						<li class="menu-item">
+							<h3 class="menu-title">Social Media</h3>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Facebook</a
 							>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Twitter</a
 							>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Instagram</a
 							>
 						</li>
-						<li class="footer__menu-item">
+						<li class="menu-item">
 							<a
 								href="#!"
-								class="footer__menu-link"
+								class="menu-link"
 								>Youtube</a
 							>
 						</li>
@@ -137,56 +137,56 @@
 	padding: 7.375rem 0;
 }
 
-.footer__item {
+.inner {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.footer__logo {
+.logo {
 	width: 50%;
 }
 
-.footer__logo-mark {
+.logo-mark {
 	display: inline-flex;
 }
 
-.footer__logo-pic {
+.logo-pic {
 	width: 10.625rem;
 	height: 4rem;
 	color: var(--color-white);
 	vertical-align: baseline;
 }
 
-.footer__nav {
+.nav {
 	display: flex;
 	justify-content: space-between;
 	width: 50%;
 }
 
-.footer__menu {
+.menu {
 	list-style: none;
 }
 
-.footer__menu-item {
+.menu-item {
 	color: var(--color-white);
 }
 
-.footer__menu-title {
+.menu-title {
 	font-weight: 700;
 	font-size: 1.125rem;
 	line-height: 1.5rem;
 }
 
-.footer__menu-link {
+.menu-link {
 	color: inherit;
 	text-decoration: none;
 	font-size: 1rem;
 	line-height: 1.5rem;
 }
 
-.footer__menu-link:hover,
-.footer__menu-link:focus,
-.footer__menu-link:active {
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
 	opacity: 0.8;
 }
 

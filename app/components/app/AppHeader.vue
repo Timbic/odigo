@@ -4,69 +4,69 @@
 		ref="header"
 	>
 		<div class="wrapper">
-			<div class="header__wrapper">
-				<div class="header__logo">
+			<div class="inner">
+				<div class="logo">
 					<a
 						href=""
-						class="header__logo-link"
+						class="logo-link"
 						aria-label="Discover Amazing places in Japan"
 					>
 						<Icon
 							name="odigo:odigo-logo"
-							class="header__logo-pic"
+							class="logo-pic"
 							aria-hidden="true"
 						/>
 					</a>
 				</div>
 
 				<nav
-					class="header__nav"
+					class="nav"
 					ref="header-nav"
 				>
-					<ul class="header__list">
-						<li class="header__item">
+					<ul class="list">
+						<li class="item">
 							<a
 								href="#"
-								class="header__link"
+								class="nav-link"
 								>Articles</a
 							>
 						</li>
-						<li class="header__item">
+						<li class="item">
 							<a
 								href="#"
-								class="header__link"
+								class="nav-link"
 								>Locations</a
 							>
 						</li>
-						<li class="header__item">
+						<li class="item">
 							<a
 								href="#"
-								class="header__link"
+								class="nav-link"
 								>Videos</a
 							>
 						</li>
-						<li class="header__item">
+						<li class="item">
 							<a
 								href="#"
-								class="header__link"
+								class="nav-link"
 								>Sign in</a
 							>
 						</li>
 					</ul>
 					<div
-						class="header__nav-close"
+						class="nav-close"
 						@click="onMenuCloseItemClick"
 					>
-						<span class="header__nav-close-line"></span><span class="header__nav-close-line"></span>
+						<span class="close-line"></span><span class="close-line"></span>
 					</div>
 				</nav>
 				<div
-					class="header__burger burger"
+					class="burger"
 					@click="onBurgerItemClick"
 				>
-					<span class="burger__line burger__line_first"></span>
-					<span class="burger__line burger__line_second"></span>
-					<span class="burger__line burger__line_third"></span>
+					<span class="burger-line line-first"></span>
+					<span class="burger-line line-second"></span>
+					<span class="burger-line line-third"></span>
 				</div>
 			</div>
 		</div>
@@ -92,11 +92,11 @@
 	z-index: 999;
 }
 
-.header_active {
+.is-active {
 	background: var(--color-navy-dark);
 }
 
-.header__wrapper {
+.inner {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
@@ -104,28 +104,28 @@
 	padding-top: 3.5rem;
 }
 
-.header__logo-pic {
+.logo-pic {
 	width: 5.125rem;
 	height: 1.9375rem;
 	color: var(--color-white);
 	vertical-align: baseline;
 }
 
-.header__list {
+.list {
 	display: flex;
 	list-style-type: none;
 	flex-wrap: wrap;
 }
 
-.header__item {
+.item {
 	margin-right: 5.125rem;
 }
 
-.header__item:last-child {
+.item:last-child {
 	margin-right: 0;
 }
 
-.header__link {
+.nav-link {
 	font-family: "Lato";
 	color: var(--color-white);
 	text-decoration: none;
@@ -133,21 +133,21 @@
 	line-height: 1.5rem;
 }
 
-.header__link:hover,
-.header__link:focus,
-.header__link:active {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
 	cursor: pointer;
 	opacity: 0.8;
 }
 
-.header__burger {
+.burger {
 	display: none;
 	width: 2.5rem;
 	height: 1.75rem;
 	position: relative;
 }
 
-.burger__line {
+.burger-line {
 	display: block;
 	width: 100%;
 	height: 0.125rem;
@@ -156,27 +156,27 @@
 	left: 0;
 }
 
-.burger__line_first {
+.line-first {
 	top: 0;
 }
 
-.burger__line_second {
+.line-second {
 	top: 50%;
 	transform: translateY(-50%);
 }
 
-.burger__line_third {
+.line-third {
 	bottom: 0;
 }
 
 /* Header styles end */
 
 @media screen and (max-width: 47.9375rem) {
-	.header__burger {
+	.burger {
 		display: block;
 	}
 
-	.header__nav {
+	.nav {
 		width: 100%;
 		height: 100%;
 		position: fixed;
@@ -189,26 +189,26 @@
 		transition: 0.2s linear;
 	}
 
-	.header__nav--active {
+	.is-open {
 		transform: translateX(0);
 	}
 
-	.header__item {
+	.item {
 		width: 100%;
 		margin-right: 0;
 		margin-bottom: 1.875rem;
 	}
 
-	.header__item:last-child {
+	.item:last-child {
 		margin-bottom: 0;
 	}
 
-	.header__link {
+	.nav-link {
 		font-size: 2.625rem;
 		line-height: 3rem;
 	}
 
-	.header__nav-close {
+	.nav-close {
 		width: 2.5rem;
 		height: 2.5rem;
 		position: absolute;
@@ -217,7 +217,7 @@
 		z-index: 11;
 	}
 
-	.header__nav-close-line {
+	.close-line {
 		display: block;
 		width: 100%;
 		height: 0.125rem;
@@ -226,11 +226,11 @@
 		top: 50%;
 	}
 
-	.header__nav-close-line:first-child {
+	.close-line:first-child {
 		transform: translateY(-50%) rotate(45deg);
 	}
 
-	.header__nav-close-line:last-child {
+	.close-line:last-child {
 		transform: translateY(-50%) rotate(-45deg);
 	}
 }
@@ -241,19 +241,19 @@ const header = useTemplateRef("header");
 onMounted(() => {
 	window.onscroll = () => {
 		if (window.pageYOffset > 50) {
-			header.value?.classList.add("header_active");
+			header.value?.classList.add("is-active");
 		} else {
-			header.value?.classList.remove("header_active");
+			header.value?.classList.remove("is-active");
 		}
 	};
 });
 
 const menu = useTemplateRef("header-nav");
 function onBurgerItemClick() {
-	menu.value?.classList.add("header__nav--active");
+	menu.value?.classList.add("is-open");
 }
 
 function onMenuCloseItemClick() {
-	menu.value?.classList.remove("header__nav--active");
+	menu.value?.classList.remove("is-open");
 }
 </script>

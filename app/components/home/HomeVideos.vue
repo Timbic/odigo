@@ -2,10 +2,10 @@
 	<!-- VIDEOS SECTION -->
 
 	<section class="videos">
-		<div class="videos__wrapper">
-			<div class="videos__video">
+		<div class="wrapper">
+			<div class="video">
 				<iframe
-					class="videos__video-element"
+					class="video-element"
 					src="https://www.youtube.com/embed/IuTDuvYr7f0?si=SzMYCAjLpfJIon2F"
 					title="YouTube video player"
 					frameborder="0"
@@ -25,17 +25,17 @@
 	width: 100%;
 }
 
-.videos__wrapper {
+.wrapper {
 	max-width: 90rem;
 	margin: 0 auto;
 	position: relative;
 }
 
-.videos__video {
+.video {
 	padding-top: 56.25%;
 }
 
-.videos__video-element {
+.video-element {
 	position: absolute;
 	top: 0;
 	left: 0;
